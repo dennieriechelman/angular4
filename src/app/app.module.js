@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var hero_detail_component_1 = require("./hero-detail.component");
 var app_component_1 = require("./app.component");
 var forms_1 = require("@angular/forms");
 var AppModule = (function () {
@@ -20,7 +21,10 @@ AppModule = __decorate([
             platform_browser_1.BrowserModule,
             forms_1.FormsModule
         ],
-        declarations: [app_component_1.AppComponent],
+        declarations: [
+            app_component_1.AppComponent,
+            hero_detail_component_1.HeroDetailComponent
+        ],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
